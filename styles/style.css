@@ -299,13 +299,13 @@ address {
   font-weight: 400;
 }
 
-.footer__social-list{
+.footer__social-list {
   justify-self: end;
   list-style: none;
   display: flex;
   gap: 50px;
 }
 
-.footer__social-list-item{
+.footer__social-list-item {
   width: 48px;
 }
