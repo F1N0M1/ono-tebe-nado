@@ -290,6 +290,10 @@
   font-weight: 400;
 }
 
+.footer__link_active{
+  text-decoration: none;
+}
+
 .footer__link:hover{
   text-decoration: none;
 }
