@@ -48,7 +48,7 @@
   padding: 0 5px 5px 5px;
 }
 
-address {
+.address {
   justify-self: end;
   font-style: normal;
   font-size: 18px;
@@ -71,7 +71,6 @@ address {
   z-index: -1;
   opacity: 0.6;
   background-color: #000;
-
   width: 100%;
   height: 100%;
   position: absolute;
@@ -89,20 +88,21 @@ address {
   letter-spacing: 30px;
 }
 
-.aligned-text {
+.aligned-span {
   display: block;
   height: 115px;
 }
 
-.aligned-text_center {
+.aligned-span_center {
   text-align: center;
   margin: 20px 0;
   height: 100px;
   line-height: 100%;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
 }
 
-.aligned-text_right {
+.aligned-span_right {
   font-size: 100px;
   line-height: 100%;
   text-align: right;
@@ -125,28 +125,28 @@ address {
   align-items: center;
 }
 
-.cover__desc-text {
+.cover__desc-span {
   font-size: 22px;
   line-height: 28px;
-  /* 127.273% */
   text-transform: uppercase;
-
   word-spacing: 18px;
-
   margin-right: 78px;
 }
 
 .bet-button {
   border: 1px solid #fff;
   background: transparent;
-  width: 257px;
-  height: 52px;
-
+  padding: 12px 32px;
   text-transform: uppercase;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.bet-button:hover{
+  opacity: 1;
+  background-color: #000;
 }
 
 .lots {
@@ -182,31 +182,24 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  gap: 40px 50px;
-  height: 450px;
+  gap: 0 50px;
+  min-height: 450px;
   padding: 50px 40px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
 }
 
 .card_type_film {
-  position: relative;
-  z-index: 1;
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
 }
 
 .card_type_book {
-  position: relative;
-  z-index: 1;
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
-  position: relative;
-  z-index: 1;
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
 }
 
 .card__title {
@@ -225,7 +218,6 @@ address {
 .lots__look-more-link {
   font-size: 20px;
   font-weight: 400;
-
   text-underline-offset: 4px;
   padding: 0 0 0 40px;
 }
@@ -255,7 +247,6 @@ address {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-
   margin: 100px 0;
 }
 
@@ -270,7 +261,7 @@ address {
 }
 
 .footer {
-  padding: 0 50px;
+  padding: 0 50px 90px 50px;
   display: grid;
   grid-template-columns: 33.3333% 33.3333% 33.3333%;
   justify-items: center;
@@ -297,6 +288,10 @@ address {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+}
+
+.footer__link:hover{
+  text-decoration: none;
 }
 
 .footer__social-list {
