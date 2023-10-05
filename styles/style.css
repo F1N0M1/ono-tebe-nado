@@ -221,7 +221,7 @@
 .about {
   padding: 0 50px 180px;
   display: grid;
-  grid-template-columns: 430px 885px;
+  grid-template-columns: 430px 1fr;
   gap: 25px;
 }
 
